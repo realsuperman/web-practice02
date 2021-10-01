@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5+CSS3 Text</title>
+    <style>
+        div{
+            width:13%;
+            height: 50px;
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            z-index: 0;
+        }
+        .one{
+            position: static;
+        }
+        .two{
+            position: absolute;
+            margin-left:0.2%;
+        }
+        .three{
+            position: absolute;
+            margin-left:13.4%;
+        }
+        .four{
+            position: absolute;
+            margin-left:26.6%;
+        }
+        .five{
+            position: absolute;
+            margin-left:39.8%;
+        }
+        .six{
+            position: absolute;
+            margin-left:53%;
+        }
+        .down:hover{
+            z-index: 1;
+            margin-top:20px;
+            margin-left:20px;
+            background-color: green;
+        }
+        .up:hover{
+            z-index: 1;
+            margin-bottom:20px;
+            transform: translate(-20px, -20px);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>div 배치</h1><hr>
+    <div class="one">A</div>
+    <div class="two down">B</div>
+    <div class="three">C</div>
+    <div class="four">D</div>
+    <div class="five up">E</div>
+    <div class="six">F</div>
+</body>
+</html>
