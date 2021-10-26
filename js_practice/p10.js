@@ -17,7 +17,7 @@ delayP(1).then((result)=>{
     return delayP(1);
 }).then((result)=>{
     console.log(2,result);
-    return delayP(3);
+    return delayP(1);
 }).then((result)=>{
     console.log(3,result);
 })
